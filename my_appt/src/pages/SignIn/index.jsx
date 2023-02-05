@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup";
 import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -8,10 +8,7 @@ import {DivLabels, DivInputs, DivCardLogIn,Tittle, DivInputsANDLabels,Labels,Inp
 
 
 
-interface IResponseData {
-	email: string;
-	password: string;
-}
+
 
 const schema = yup.object({
 	email: yup.string().required("E-mail obrigátorio").email("E-mail inválido"),
@@ -31,7 +28,7 @@ function LogIn() {
 		register,
 		handleSubmit,
 		formState: { errors },
-	} = useForm<IResponseData>({
+	} = useForm({
 		resolver: yupResolver(schema),
 	});
 

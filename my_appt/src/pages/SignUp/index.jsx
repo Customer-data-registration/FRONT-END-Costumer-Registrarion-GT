@@ -7,14 +7,7 @@ import * as yup from "yup";
 import { Form, useNavigate } from "react-router-dom";
 import {Tittle,DivCardSingUp,DivInputsANDLabelsCard,DivLabels,LabelDesc,DivInputs, Inputs ,ButtonCreateAccount, DivBNTSingIn,ButtonGoToSingIn, DescLogInRoute} from "./style"
 
-interface IResponseData {
-    id:string
-	name: string;
-	email: string;
-	password: string;
-	contact: string;
-	
-}
+
 
 const schema = yup.object({
   name: yup.string().required("Campo obrigatório"),

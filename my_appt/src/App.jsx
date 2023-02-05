@@ -1,5 +1,5 @@
 import "./App.css";
-import MainRoutes from "./routes";
+import MainRoutes from "./routes/index"
 import React from "react";
 
 function App() {
