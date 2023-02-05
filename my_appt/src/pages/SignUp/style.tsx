@@ -3,6 +3,8 @@ import styled from "styled-components"
 export const DivCardSingUp = styled.div`
 
 `
+export const Tittle = styled.h2``
+
 export const DivInputsANDLabelsCard = styled.div``
 
 export const DivLabels = styled.div``
